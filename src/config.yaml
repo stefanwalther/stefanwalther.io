@@ -1,0 +1,11 @@
+---
+baseURL:                    ""
+buildDrafts:                false
+buildExpired:               true
+buildFuture:                true
+languageCode:               "en-us"
+themesDir:                  "themes"
+theme:                      "hugo-future-imperfect"
+title:                      "stefanwalther.io - Private blog"
+metaDataFormat:             "yaml"
+---

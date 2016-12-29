@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on stefanwalther.io - Private blog</title>
+    <link>/blog/index.xml</link>
+    <description>Recent content in Blogs on stefanwalther.io - Private blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Dec 2016 13:52:59 +0100</lastBuildDate>
+    <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>test3</title>
+      <link>/blog/test3/</link>
+      <pubDate>Thu, 29 Dec 2016 13:52:59 +0100</pubDate>
+      
+      <guid>/blog/test3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test1</title>
+      <link>/blog/test1/</link>
+      <pubDate>Thu, 29 Dec 2016 13:52:51 +0100</pubDate>
+      
+      <guid>/blog/test1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
