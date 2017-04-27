@@ -12,9 +12,15 @@ googleAnalytics = ""
     description          = ""
     # This will appear on the top left of the navigation bar
     navbarTitle          = "stefanwalther.io"
+
+    # RSS icon that appear on the sidebar, next to the social media buttons
+    rssAppearAtTop       = false
+    rssAppearAtBottom    = true
+
     # Social media buttons that appear on the sidebar
     socialAppearAtTop    = false
-    socialAppearAtBottom = false
+    socialAppearAtBottom = true
+
     # set this to the section name if section is not post
     viewMorePostLink     = "/blog/"
 
