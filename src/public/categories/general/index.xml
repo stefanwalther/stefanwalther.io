@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>general on stefanwalther.io</title>
+    <link>http://stefanwalther.io/categories/general/index.xml</link>
+    <description>Recent content in general on stefanwalther.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://stefanwalther.io/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Yet another blog. Why?</title>
+      <link>http://stefanwalther.io/blog/another-blog/</link>
+      <pubDate>Thu, 27 Apr 2017 20:12:29 +0200</pubDate>
+      
+      <guid>http://stefanwalther.io/blog/another-blog/</guid>
+      <description>&lt;p&gt;I like to blog. I like to share.&lt;br /&gt;
+In the recent years I have primarily created content on &lt;a href=&#34;http://www.qlikblog.at&#34;&gt;qlikblog.at&lt;/a&gt;, then I shared quite some solutions &amp;amp; prototypes &lt;a href=&#34;https://github.com/stefanwalther&#34;&gt;on GitHub&lt;/a&gt; and recently I have started a new blog called &lt;a href=&#34;http://qliksite.io&#34;&gt;qliksite.io&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;So why creating another blog?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;While all the efforts int the past focused on projects, prototypes to spread the word in the Qlik ecosystem (QlikView, Qlik Sense &amp;amp; Qlik Analytics Plaform), there is just more I want to write about:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;General programming topics&lt;/li&gt;
+&lt;li&gt;I am a big fan and adopter of IoT&lt;/li&gt;
+&lt;li&gt;I have three boys, two of them are entering an age where I can start building fun stuff (Raspberry PI, robots, etc.).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So this blog is just a private one, just a place to share some ideas &amp;amp; thoughts - without really taking care what the professional periphery will think about it.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

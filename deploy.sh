@@ -8,22 +8,26 @@ then
     exit 1;
 fi
 
-git checkout --orphan gh-pages
-git reset --hard
-git commit --allow-empty -m "Initializing gh-pages branch"
-git push upstream gh-pages
-git checkout master
+# Just need to do this once:
+#git remote add upstream git@github.com:stefanwalther/stefanwalther.io.git
+#git checkout --orphan gh-pages
+#git reset --hard
+#git commit --allow-empty -m "Initializing gh-pages branch"
+#git push upstream gh-pages
+#git checkout master
+
+cd src
 
 echo "Deleting old publication"
-rm -rf src/public
-mkdir src/public
+rm -rf public
+mkdir public
 git worktree prune
-rm -rf .git/worktrees/src/public/
+rm -rf .git/worktrees/public/
 
 
 
 echo "Checking out gh-pages branch into public"
-git worktree add -B gh-pages src/public upstream/gh-pages
+git worktree add -B gh-pages public upstream/gh-pages
 
 #echo "Removing existing files"
 #rm -rf src/public/*
