@@ -13,7 +13,7 @@ googleAnalytics = ""
     # This will appear on the top left of the navigation bar
     navbarTitle          = "stefanwalther.io"
     # Social media buttons that appear on the sidebar
-    socialAppearAtTop    = true
+    socialAppearAtTop    = false
     socialAppearAtBottom = false
     # set this to the section name if section is not post
     viewMorePostLink     = "/blog/"
@@ -27,6 +27,9 @@ googleAnalytics = ""
     # Please see the favicon partial template for more information
     loadFavicon          = false
     faviconVersion       = ""
+
+    # Disable showing the social sharing links on blog posts
+    socialShareDisabled = true
 
     # Load custom CSS or JavaScript files. This replaces the deprecated params
     # minifiedFilesCSS and minifiedFilesJS. The variable is an array so that you
