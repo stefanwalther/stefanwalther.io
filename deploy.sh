@@ -8,17 +8,18 @@ then
     exit 1;
 fi
 
+git checkout --orphan gh-pages
+git reset --hard
+git commit --allow-empty -m "Initializing gh-pages branch"
+git push upstream gh-pages
+git checkout master
+
 echo "Deleting old publication"
 rm -rf src/public
 mkdir src/public
 git worktree prune
 rm -rf .git/worktrees/src/public/
 
-git checkout --orphan gh-pages
-git reset --hard
-git commit --allow-empty -m "Initializing gh-pages branch"
-git push upstream gh-pages
-git checkout master
 
 
 echo "Checking out gh-pages branch into public"
