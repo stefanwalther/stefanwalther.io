@@ -6,7 +6,7 @@ preserveTaxonomyNames = true
 paginate = 3
 disqusShortname = "stefanwalther-io"
 googleAnalytics = "UA-98281512-1"
-publishDir = "./../docs"
+publishDir = "public"
 
 [params]
     # Sets the meta tag description, usually reserved for the main page

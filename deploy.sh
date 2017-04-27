@@ -1,41 +1,21 @@
 #!/usr/bin/env bash
 
-DIR=$(dirname "$0")
+cd src;
 
-if [[ $(git status -s) ]]
-then
-    echo "The working directory is dirty. Please commit any pending changes."
-    exit 1;
-fi
-
-# Just need to do this once:
-#git remote add upstream git@github.com:stefanwalther/stefanwalther.io.git
-#git checkout --orphan gh-pages
-#git reset --hard
-#git commit --allow-empty -m "Initializing gh-pages branch"
-#git push upstream gh-pages
-#git checkout master
-
-cd src
-
-echo "Deleting old publication"
+# remove previous publication
 rm -rf public
 mkdir public
-git worktree prune
-rm -rf .git/worktrees/public/
 
+# clone gh-pages branch from the local repo into a repo located within "public"
+git clone ./../.git --branch gh-pages public
 
+# generate
+hugo
 
-echo "Checking out gh-pages branch into public"
-git worktree add -B gh-pages public upstream/gh-pages
+# commit the changes in the clone and push them back to the local gh-pages branch
+cd public && git add --all && git commit -m "Publishing to gh-pages" && git push origin gh-pages
 
-#echo "Removing existing files"
-#rm -rf src/public/*
-#
-#echo "Generating site"
-#cd ./src
-#hugo
-#cd ..
-#
-#echo "Updating gh-pages branch"
-#cd src/public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
+# publish
+git push upstream gh-pages
+
+cd ..;
