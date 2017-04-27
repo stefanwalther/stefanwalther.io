@@ -13,10 +13,11 @@ rm -rf src/public
 mkdir src/public
 git worktree prune
 rm -rf .git/worktrees/src/public/
-#
-#echo "Checking out gh-pages branch into public"
-#git worktree add -B gh-pages src/public upstream/gh-pages
-#
+
+
+echo "Checking out gh-pages branch into public"
+git worktree add -B gh-pages src/public upstream/gh-pages
+
 #echo "Removing existing files"
 #rm -rf src/public/*
 #
