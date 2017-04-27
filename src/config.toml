@@ -5,7 +5,7 @@ theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
 disqusShortname = "stefanwalther-io"
-googleAnalytics = ""
+googleAnalytics = "UA-98281512-1"
 
 [params]
     # Sets the meta tag description, usually reserved for the main page
@@ -79,11 +79,6 @@ googleAnalytics = ""
     url = "/blog"
     identifier = "fa fa-newspaper-o"
     weight = 1
-
-[[menu.main]]
-    name = "About"
-    url = "/about"
-    weight = 3
 
 # Insert your username and the icon will apear on the page as long as
 # socialAppearAtTop or socialAppearAtBottom is set to true in the params area
