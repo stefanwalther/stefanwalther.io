@@ -1,0 +1,9 @@
+{
+  "name": "stefanwalther.io",
+  "version": "0.1.0",
+  "description": "Content for stefanwalther.io",
+  "main": "index.js",
+  "repository": "git@github.com:stefanwalther/stefanwalther.github.io.git",
+  "author": "Stefan Walther",
+  "license": "cc-by-4.0"
+}
