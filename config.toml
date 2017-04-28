@@ -1,4 +1,4 @@
-baseUrl = "stefanwalther.io"
+baseUrl = "http://stefanwalther.io/"
 languageCode = "en-us"
 title = "stefanwalther.io"
 theme = "hugo-future-imperfect"
@@ -78,11 +78,11 @@ publishDir = "public"
 
 # Set up your menu items in the navigation bar
 # You can use identifier to prepend a font awesome icon to your text
-[[menu.main]]
-    name = "Blog"
-    url = "/blog"
-    identifier = "fa fa-newspaper-o"
-    weight = 1
+#[[menu.main]]
+#    name = "Blog"
+#    url = "/blog"
+#    identifier = "fa fa-newspaper-o"
+#    weight = 1
 
 # Insert your username and the icon will apear on the page as long as
 # socialAppearAtTop or socialAppearAtBottom is set to true in the params area
