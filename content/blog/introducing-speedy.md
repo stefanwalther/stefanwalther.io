@@ -10,6 +10,7 @@ featuredpath = ""
 author = ""
 type = "post"
 slug = "speedy"
+draft = "true"
 +++
 
 So what's speedy?
