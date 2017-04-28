@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://stefanwalther.io/blog/another-blog/</loc>
+    <loc>/blog/another-blog/</loc>
     <lastmod>2017-04-27T20:12:29+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://stefanwalther.io/blog/</loc>
-    <lastmod>2017-04-27T20:12:29+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://stefanwalther.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://stefanwalther.io/categories/general/</loc>
+    <loc>/blog/</loc>
     <lastmod>2017-04-27T20:12:29+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://stefanwalther.io/</loc>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/general/</loc>
+    <lastmod>2017-04-27T20:12:29+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
     <lastmod>2017-04-27T20:12:29+02:00</lastmod>
     <priority>0</priority>
   </url>
