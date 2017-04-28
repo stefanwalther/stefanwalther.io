@@ -1,4 +1,4 @@
-baseUrl = ""
+baseUrl = "stefanwalther.io"
 languageCode = "en-us"
 title = "stefanwalther.io"
 theme = "hugo-future-imperfect"
@@ -9,7 +9,7 @@ googleAnalytics = "UA-98281512-1"
 publishDir = "public"
 
 [permalinks]
-    blog = "/blog/:year/:month/:title/"
+    blog = "/blog/:year/:month/:slug/"
 
 [params]
     # Sets the meta tag description, usually reserved for the main page
