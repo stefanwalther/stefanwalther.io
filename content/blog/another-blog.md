@@ -7,7 +7,7 @@ featured = "pic-01.png"
 featuredpath = "date"
 linktitle = ""
 description = ""
-author = ""
+author = "Stefan Walther"
 type = "post"
 +++
 

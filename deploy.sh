@@ -24,4 +24,4 @@ git remote add upstream git@github.com:stefanwalther/stefanwalther.io.git
 git push upstream gh-pages;
 
 cd ..;
-rm -rf public;
+#rm -rf public;
