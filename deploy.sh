@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-cd src;
-
 # remove previous publication
 rm -rf public
 mkdir public
