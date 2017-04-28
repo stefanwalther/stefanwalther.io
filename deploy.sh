@@ -11,7 +11,11 @@ git clone .git --branch gh-pages public
 hugo
 
 # commit the changes in the clone and push them back to the local gh-pages branch
+echo "### Commit changes ...";
 cd public && git add --all && git commit -m "Publishing to gh-pages" && git push origin gh-pages
 
+
 # publish
+echo "";
+echo "### Push";
 git push upstream gh-pages;
