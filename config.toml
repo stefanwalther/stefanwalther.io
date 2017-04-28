@@ -1,4 +1,4 @@
-baseUrl = "https://stefanwalther.github.io/stefanwalther.io/"
+baseUrl = "/"
 languageCode = "en-us"
 title = "stefanwalther.io"
 theme = "hugo-future-imperfect"
