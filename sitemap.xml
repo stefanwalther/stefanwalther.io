@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/blog/2017/04/yet-another-blog.-why/</loc>
+    <loc>http://stefanwalther.io/blog/2017/04/yet-another-blog.-why/</loc>
     <lastmod>2017-04-27T20:12:29+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/</loc>
-    <lastmod>2017-04-27T20:12:29+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/general/</loc>
+    <loc>http://stefanwalther.io/blog/</loc>
     <lastmod>2017-04-27T20:12:29+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>http://stefanwalther.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://stefanwalther.io/categories/general/</loc>
+    <lastmod>2017-04-27T20:12:29+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://stefanwalther.io/</loc>
     <lastmod>2017-04-27T20:12:29+02:00</lastmod>
     <priority>0</priority>
   </url>
