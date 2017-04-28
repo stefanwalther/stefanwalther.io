@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# See advanced version of this script: https://github.com/mapstruct/mapstruct.org/blob/master/scripts/publish.sh
+
 # remove previous publication
 rm -rf public
 mkdir public
