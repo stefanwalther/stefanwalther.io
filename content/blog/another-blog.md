@@ -2,9 +2,9 @@
 date = "2017-04-27T20:12:29+02:00"
 title = "Yet another blog. Why?"
 categories = ["general"]
-featuredalt = ""
 featured = "pic-01.png"
 featuredpath = "date"
+featuredalt = ""
 linktitle = ""
 description = ""
 author = "Stefan Walther"
