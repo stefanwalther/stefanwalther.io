@@ -18,4 +18,8 @@ cd public && git add --all && git commit -m "Publishing to gh-pages" && git push
 # publish
 echo "";
 echo "### Push";
+git remote add upstream git@github.com:stefanwalther/stefanwalther.io.git
 git push upstream gh-pages;
+
+cd ..;
+rm -rf public;
