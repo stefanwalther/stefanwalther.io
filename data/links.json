@@ -1,0 +1,22 @@
+[
+  {
+    "name": "qliksite.io",
+    "url": "http://qliksite.io",
+    "description": "A blog about Qlik Sense & the Qlik Analytics Platform"
+  },
+  {
+    "name": "qlikblog.at",
+    "url": "http://qlikblog.at",
+    "description": "QlikView related blog"
+  },
+  {
+    "name": "Published projects & prototypes",
+    "url": "http://qliksite.io/projects",
+    "description": "A collection of projects I have been working on in the recent years"
+  },
+  {
+    "name": "Open sourced projects on GitHub",
+    "url": "http://github.com/stefanwalther",
+    "description": "Projects I have open sourced, some of the Qlik related, others are just randomly using other technologies."
+  }
+]
