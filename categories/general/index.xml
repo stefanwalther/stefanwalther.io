@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>general on stefanwalther.io</title>
-    <link>/categories/general/index.xml</link>
+    <link>/stefanwalther.io/categories/general/index.xml</link>
     <description>Recent content in general on stefanwalther.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/stefanwalther.io/categories/general/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Yet another blog. Why?</title>
-      <link>/blog/2017/04/yet-another-blog/</link>
+      <link>/stefanwalther.io/blog/2017/04/yet-another-blog/</link>
       <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2017/04/yet-another-blog/</guid>
+      <guid>/stefanwalther.io/blog/2017/04/yet-another-blog/</guid>
       <description>&lt;p&gt;I like to blog. I like to share.&lt;br /&gt;
 In the recent years I have primarily created content on &lt;a href=&#34;http://www.qlikblog.at&#34;&gt;qlikblog.at&lt;/a&gt;, then I shared quite some solutions &amp;amp; prototypes &lt;a href=&#34;https://github.com/stefanwalther&#34;&gt;on GitHub&lt;/a&gt; and recently I have started a new blog called &lt;a href=&#34;http://qliksite.io&#34;&gt;qliksite.io&lt;/a&gt;&lt;/p&gt;
 
