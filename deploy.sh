@@ -2,6 +2,10 @@
 
 # See advanced version of this script: https://github.com/mapstruct/mapstruct.org/blob/master/scripts/publish.sh
 
+# make sure that the theme is updates
+git submodule init
+git submodule update
+
 # remove previous publication
 rm -rf public
 mkdir public
