@@ -1,16 +1,15 @@
 +++
 title = "GitHub - the Next Bad Guy?"
-date = "2017-06-06"
-linktitle = ""
 description = "Is GitHub the next bad guy in the IT-industry?"
 categories = ["thoughts"]
+date = "2017-06-06"
+linktitle = ""
 featured = "header.png"
-featuredalt = ""
 featuredpath = "date"
+featuredalt = ""
 author = "Stefan Walther"
 type = "post"
 slug = "github-bad-guy"
-draft = "false"
 +++
 
 It's not that long ago that Microsoft was the bad guy for everything happening in the IT-industry. It was just cool to bash MS in favor of any Linux/Open-Source solution.

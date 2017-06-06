@@ -1,13 +1,13 @@
 +++
-date = "2017-04-27"
 title = "Yet another blog. Why?"
+description = ""
 categories = ["general"]
+date = "2017-04-27"
+linktitle = ""
 featured = "header.png"
 featuredpath = "date"
 featuredalt = ""
-linktitle = ""
-description = ""
-author = ""
+author = "Stefan Walther"
 type = "post"
 slug = "yet-another-blog"
 +++
