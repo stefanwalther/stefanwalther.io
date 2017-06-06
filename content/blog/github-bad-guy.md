@@ -7,10 +7,10 @@ categories = ["thoughts"]
 featured = ""
 featuredalt = ""
 featuredpath = ""
-author = ""
+author = "Stefan Walther"
 type = "post"
 slug = "github-bad-guy"
-draft = "true"
+draft = "false"
 +++
 
 It's not that long ago that Microsoft was the bad guy for everything happening in the IT-industry. It was just cool to bash MS in favor of any Linux/Open-Source solution.
