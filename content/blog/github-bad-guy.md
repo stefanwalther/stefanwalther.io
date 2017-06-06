@@ -1,12 +1,12 @@
 +++
 title = "GitHub - the Next Bad Guy?"
-date = "2017-06-06T22:10:13+02:00"
+date = "2017-06-06"
 linktitle = ""
 description = "Is GitHub the next bad guy in the IT-industry?"
 categories = ["thoughts"]
-featured = ""
+featured = "header.png"
 featuredalt = ""
-featuredpath = ""
+featuredpath = "date"
 author = "Stefan Walther"
 type = "post"
 slug = "github-bad-guy"
