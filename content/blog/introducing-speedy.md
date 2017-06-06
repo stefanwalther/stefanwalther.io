@@ -13,7 +13,9 @@ slug = "speedy"
 draft = "true"
 +++
 
-So what's speedy?
-What's up...
+I am a data-junky and I am quite keen on creating a great IT environment at home.  
+Having a good and reliable internet connection is key. But I wanted to see number: How reliable is my internet service provider?
+
+Speedy allows you to continuously run a speed-check, collect the data and analyze them to actually find the bottlenecks, to find out how often the bandwidth is not holding the promises of your ISP.
 
 
