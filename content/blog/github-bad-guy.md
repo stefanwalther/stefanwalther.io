@@ -12,7 +12,7 @@ type = "post"
 slug = "github-bad-guy"
 +++
 
-It's not that long ago that Microsoft was the bad guy for everything happening in the IT-industry. It was just cool to bash MS in favor of any Linux/Open-Source solution.
+It's not that long ago, that Microsoft was the bad guy for everything happening in the IT-industry. It was just cool to bash MS in favor of any Linux/Open-Source solution.
 
 Now we have 2017, the situation has changed dramatically. So, what happened?
 
