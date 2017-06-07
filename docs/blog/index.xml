@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on stefanwalther.io</title>
+    <link>http://stefanwalther.io/blog/index.xml</link>
+    <description>Recent content in Blogs on stefanwalther.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://stefanwalther.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>GitHub - the Next Bad Guy?</title>
+      <link>http://stefanwalther.io/blog/2017/06/github-bad-guy/</link>
+      <pubDate>Tue, 06 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://stefanwalther.io/blog/2017/06/github-bad-guy/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s not that long ago, that Microsoft was the bad guy for everything happening in the IT-industry. It was just cool to bash MS in favor of any Linux/Open-Source solution.&lt;/p&gt;
+
+&lt;p&gt;Now we have 2017, the situation has changed dramatically. So, what happened?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Microsoft is starting to become cool, being the &lt;a href=&#34;http://www.businessinsider.de/microsoft-github-open-source-2016-9&#34;&gt;Nr. 1 contributor in the Open Source world&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Microsoft and Google have swapped places: &amp;ldquo;&lt;a href=&#34;https://www.forbes.com/sites/gordonkelly/2015/02/18/microsoft-google-swap/#767ef7223eb2&#34;&gt;Microsoft is The New Google, Google is the Old Microsoft&lt;/a&gt;&amp;ldquo;&lt;/li&gt;
+&lt;li&gt;GitHub has become one of the major dependencies for every IT-company&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I claim that GitHub has a huge potential to become the &lt;strong&gt;new bad guy in the industry&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Recently it was announced that &lt;a href=&#34;https://github.com/blog/2345-celebrating-nine-years-of-github-with-an-anniversary-sale&#34;&gt;GitHub has merged 100 million pull requests&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Microsoft, Google, Amazon have moved their most important Open Source repos to GitHub.&lt;/li&gt;
+&lt;li&gt;Microsoft has &lt;a href=&#34;https://blogs.msdn.microsoft.com/bharry/2017/03/31/shutting-down-codeplex/&#34;&gt;announced to shut down CodePlex&lt;/a&gt; in favor of GitHub.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Can you remember?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Not that many years ago, &lt;a href=&#34;https://sourceforge.net/&#34;&gt;SourceForge&lt;/a&gt; was the Nr. 1 Open Source platform.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sure, there are other (minor) players&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bitbucket.org&#34;&gt;BitBucket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitlab.org&#34;&gt;GitLab&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I cannot find any numbers, but I guess they are just negligible in terms of number of valuable and important repositories.&lt;/p&gt;
+
+&lt;p&gt;So what happens if GitHub is down for a few days, maybe even a week or two?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Software companies cannot deliver anymore?&lt;/li&gt;
+&lt;li&gt;CI/CD processes are broken, no deliveries to cloud services anymore &amp;hellip;&lt;/li&gt;
+&lt;li&gt;Wake up, &lt;a href=&#34;https://twitter.com/Ozzmos/status/869895400404201473/photo/1&#34;&gt;GitHub can be down&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Who is the next big player actually breaking the dependency from GitHub?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Just to make it crystal-clear:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I love GitHub and spend a significant amount of time on GitHub!&lt;/li&gt;
+&lt;li&gt;But I am actually scared about the dependency we all create on a working GitHub environment &amp;amp; service.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Yet another blog. Why?</title>
+      <link>http://stefanwalther.io/blog/2017/04/yet-another-blog/</link>
+      <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://stefanwalther.io/blog/2017/04/yet-another-blog/</guid>
+      <description>&lt;p&gt;I like to blog. I like to share.&lt;br /&gt;
+In the recent years I have primarily created content on &lt;a href=&#34;http://www.qlikblog.at&#34;&gt;qlikblog.at&lt;/a&gt;, then I shared quite some solutions &amp;amp; prototypes &lt;a href=&#34;https://github.com/stefanwalther&#34;&gt;on GitHub&lt;/a&gt; and recently I have started a new blog called &lt;a href=&#34;http://qliksite.io&#34;&gt;qliksite.io&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;So why creating another blog?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;While all the efforts in the past primarily focused on projects, prototypes to spread the word in the Qlik ecosystem (&lt;a href=&#34;http://www.qlik.com/us/products/qlikview&#34;&gt;QlikView&lt;/a&gt;, &lt;a href=&#34;http://www.qlik.com/us/products/qlik-sense&#34;&gt;Qlik Sense&lt;/a&gt; &amp;amp; &lt;a href=&#34;http://www.qlik.com/us/products/qlik-analytics-platform&#34;&gt;Qlik Analytics Plaform&lt;/a&gt;), there is just more I want to write about:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;General trends in the IT-space, Cloud Computing, IoT, microservices, Docker, etc.&lt;/li&gt;
+&lt;li&gt;General programming topics&lt;/li&gt;
+&lt;li&gt;I am a big fan and adopter of IoT, having build a pretty crazy environment at home, which I&amp;rsquo;d like to start sharing &amp;hellip;&lt;/li&gt;
+&lt;li&gt;I have three boys, two of them are entering an age, where I can start building fun stuff together with them (Raspberry PI, robots, etc.).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learning new technologies is the spice of my professional life, it inspires me and helps me to innovate in my professional life, but it&amp;rsquo;s also just the enjoyable and free time I need on a daily basis.&lt;/p&gt;
+
+&lt;p&gt;So this blog is just a private one, just a place to share some ideas &amp;amp; thoughts - without really taking care what the professional periphery will think about it.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
