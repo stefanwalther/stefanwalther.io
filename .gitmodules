@@ -1,3 +1,3 @@
 [submodule "themes/hugo-future-imperfect"]
 	path = themes/hugo-future-imperfect
-	url = git@github.com:stefanwalther/hugo-future-imperfect.git
+	url = https://github.com/stefanwalther/hugo-future-imperfect
