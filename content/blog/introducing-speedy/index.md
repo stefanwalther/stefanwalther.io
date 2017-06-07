@@ -9,7 +9,7 @@ featuredalt = ""
 featuredpath = ""
 author = ""
 type = "post"
-slug = "speedy"
+slug = ""
 draft = "true"
 +++
 

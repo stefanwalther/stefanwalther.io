@@ -9,7 +9,7 @@ featuredpath = "date"
 featuredalt = ""
 author = "Stefan Walther"
 type = "post"
-slug = "github-bad-guy"
+slug = ""
 +++
 
 It's not that long ago, that Microsoft was the bad guy for everything happening in the IT-industry. It was just cool to bash MS in favor of any Linux/Open-Source solution.

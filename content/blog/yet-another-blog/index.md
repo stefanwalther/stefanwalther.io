@@ -9,7 +9,7 @@ featuredpath = "date"
 featuredalt = ""
 author = "Stefan Walther"
 type = "post"
-slug = "yet-another-blog"
+slug = ""
 +++
 
 

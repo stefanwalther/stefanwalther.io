@@ -9,7 +9,8 @@ googleAnalytics = "UA-98281512-1"
 publishDir = "docs"
 
 [permalinks]
-    blog = "/blog/:year/:month/:slug/"
+    #blog = "/blog/:slug/"
+    #blog = "/blog/:year/:month/:slug/"
 
 [params]
     # Sets the meta tag description, usually reserved for the main page
