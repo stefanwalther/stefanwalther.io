@@ -5,7 +5,7 @@ categories = ["thoughts"]
 date = "2017-06-06"
 linktitle = ""
 featured = "header.png"
-featuredpath = "/blog/github-bad-guy/"
+featuredpath = "~"
 featuredalt = ""
 author = "Stefan Walther"
 type = "post"
@@ -16,7 +16,7 @@ It's not that long ago, that Microsoft was the bad guy for everything happening 
 
 Now we have 2017, the situation has changed dramatically. So, what happened?
 
-- Microsoft is starting to become cool, being the [Nr. 1 contributor in the Open Source world](http://www.businessinsider.de/microsoft-github-open-source-2016-9)
+- Microsoft is starting to b~ecome cool, being the [Nr. 1 contributor in the Open Source world](http://www.businessinsider.de/microsoft-github-open-source-2016-9)
 - Microsoft and Google have swapped places: "[Microsoft is The New Google, Google is the Old Microsoft](https://www.forbes.com/sites/gordonkelly/2015/02/18/microsoft-google-swap/#767ef7223eb2)"
 - GitHub has become one of the major dependencies for every IT-company
 
