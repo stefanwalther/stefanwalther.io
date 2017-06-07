@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>http://stefanwalther.io/blog/github-bad-guy/</loc>
@@ -29,13 +30,18 @@
   </url>
   
   <url>
-    <loc>http://stefanwalther.io/</loc>
-    <lastmod>2017-06-06T00:00:00+00:00</lastmod>
+    <loc>http://stefanwalther.io/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://stefanwalther.io/categories/thoughts/</loc>
+    <lastmod>2017-06-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://stefanwalther.io/</loc>
     <lastmod>2017-06-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
