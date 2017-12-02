@@ -1,4 +1,4 @@
-baseUrl = "http://stefanwalther.io/"
+baseUrl = "https://stefanwalther.io/"
 languageCode = "en-us"
 title = "stefanwalther.io"
 theme = "hugo-future-imperfect"
