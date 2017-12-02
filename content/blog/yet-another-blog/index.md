@@ -1,7 +1,6 @@
 +++
 title = "Yet another blog. Why?"
 description = ""
-categories = ["general"]
 date = "2017-04-27"
 linktitle = ""
 featured = "header.png"

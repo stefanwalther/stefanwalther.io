@@ -1,7 +1,6 @@
 +++
 title = "GitHub - the Next Bad Guy?"
 description = "Is GitHub the next bad guy in the IT-industry?"
-categories = ["thoughts"]
 date = "2017-06-06"
 linktitle = ""
 featured = "header.png"
