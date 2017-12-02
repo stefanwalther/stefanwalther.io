@@ -14,5 +14,5 @@ docs-serve:					## Serve the docs
 .PHONY: docs-serve
 
 docs-publish:				## Publish the docs to GitHub
-	./_scripts/publish
+	./_scripts/publish.sh
 .PHONY: docs-publish
