@@ -10,6 +10,7 @@ author = "Stefan Walther"
 type = "post"
 slug = ""
 images = ["https://stefanwalther.io/blog/docker-image-size/header.png"]
+thumbnail = "header.png"
 +++
 
 When building Docker Images one can easily forget to optimize the size of the images.
