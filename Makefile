@@ -13,10 +13,10 @@ docs-serve:					## Serve the docs
 	hugo server -D
 .PHONY: docs-serve
 
-docs-publish:				## Publish the docs to GitHub
+publish:				## Publish the docs to GitHub
 	hugo
 	./publish.sh
-.PHONY: docs-publish
+.PHONY: docs
 
 docs-gen-docker:
 	docker run -it --rm -v $(pwd):/opt/hugo stefanwalther/hugo
