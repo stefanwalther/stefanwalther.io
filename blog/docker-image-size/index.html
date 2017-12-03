@@ -1,13 +1,3 @@
-
-
-    
-
-
-    
-
-
-
-
 <!DOCTYPE HTML>
 
 <html>
@@ -16,7 +6,9 @@
         <meta http-equiv="expires" content="0" />
         <meta http-equiv="last-modified" content="2017-12-03@03:00:29 CET" />
         
-            <title>Blog - stefanwalther.io</title>
+            
+                <title>Building Docker Images - Check the Size</title>
+            
         
 
         <meta charset="utf-8" />
@@ -26,22 +18,27 @@
 
 
         
+            <meta name="author" content="Stefan Walther">
         
-            
+        
+            <meta name="description" content="Getting the size of docker images after building it ...">
         
 
-        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Blogs"/>
-<meta name="twitter:description" content=""/>
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Building Docker Images - Check the Size"/>
+<meta name="twitter:description" content="Getting the size of docker images after building it ..."/>
 <meta name="twitter:site" content="@waltherstefan"/>
 
-        <meta property="og:title" content="Blogs" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://stefanwalther.io/blog/" />
+        <meta property="og:title" content="Building Docker Images - Check the Size" />
+<meta property="og:description" content="Getting the size of docker images after building it ..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://stefanwalther.io/blog/docker-image-size/" />
 
 
 
-<meta property="og:updated_time" content="2017-12-03T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2017-12-03T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2017-12-03T00:00:00&#43;00:00"/>
+
 
 
 
@@ -53,9 +50,17 @@
 
 
         
-<meta itemprop="name" content="Blogs">
-<meta itemprop="description" content="">
+<meta itemprop="name" content="Building Docker Images - Check the Size">
+<meta itemprop="description" content="Getting the size of docker images after building it ...">
 
+
+<meta itemprop="datePublished" content="2017-12-03T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-12-03T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="134">
+
+
+
+<meta itemprop="keywords" content="" />
 
         
 
@@ -99,6 +104,7 @@ ga('send', 'pageview');
         <div id="wrapper">
 
     
+    
 <header id="header">
     
         <h2><a href="/">stefanwalther.io</i></a></h2>
@@ -111,6 +117,10 @@ ga('send', 'pageview');
     </nav>
     <nav class="main">
         <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
             
             <li class="search">
                 <a class="fa-search" href="#search">Search</a>
@@ -174,20 +184,69 @@ ga('send', 'pageview');
         
 </section>
 
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=https%3a%2f%2fstefanwalther.io%2fblog%2fdocker-image-size%2f&text=Building%20Docker%20Images%20-%20Check%20the%20Size&via=waltherstefan" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=https%3a%2f%2fstefanwalther.io%2fblog%2fdocker-image-size%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fstefanwalther.io%2fblog%2fdocker-image-size%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=https%3a%2f%2fstefanwalther.io%2fblog%2fdocker-image-size%2f&title=Building%20Docker%20Images%20-%20Check%20the%20Size" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fstefanwalther.io%2fblog%2fdocker-image-size%2f&title=Building%20Docker%20Images%20-%20Check%20the%20Size" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fstefanwalther.io%2fblog%2fdocker-image-size%2f&title=Building%20Docker%20Images%20-%20Check%20the%20Size" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Stefan%20Walther&body=https%3a%2f%2fstefanwalther.io%2fblog%2fdocker-image-size%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+</section>
+
     
     <div id="main">
         
         
-            
-        
-
-        
-            <article class="post">
+        <article class="post">
     <header>
     <div class="title">
         
-            <h1><a href="https://stefanwalther.io/blog/docker-image-size/">Building Docker Images - Check the Size</a></h1>
-            
+            <h2><a href="https://stefanwalther.io/blog/docker-image-size/">Building Docker Images - Check the Size</a></h2>
         
         
             <p>Getting the size of docker images after building it ...</p>
@@ -206,6 +265,9 @@ ga('send', 'pageview');
         
     </div>
 </header>
+
+
+    
 
     
     
@@ -232,14 +294,41 @@ ga('send', 'pageview');
     
 
 
-    <p>When building Docker Images one can easily forget to optimize the size of the images. Therefore I prefer to always get the immediate feedback, how large the resulting docker images is.
-Here&rsquo;s a small, reusable script, I use in some of my projects, a reusable section in a Makefile.
-DOCKER_IMAGE_NAME = &lt;your-docker-image-name&gt; DOCKER_IMAGE_SIZE = $(shell docker images &ndash;format &quot;{{.Repository}} {{.Size}}&quot; | grep $(DOCKER_IMAGE_NAME) | cut -d\ -f2) build: ## Build the docker image docker build -t $(DOCKER_IMAGE_NAME) .</p>
+    <div id="content">
+        
+
+<p>When building Docker Images one can easily forget to optimize the size of the images.
+Therefore I prefer to always get the immediate feedback, how large the resulting docker images is.</p>
+
+<p>Here&rsquo;s a small, reusable script, I use in some of my projects, a reusable section in a Makefile.</p>
+
+<pre><code>DOCKER_IMAGE_NAME = &lt;your-docker-image-name&gt;
+DOCKER_IMAGE_SIZE = $(shell docker images --format &quot;{{.Repository}} {{.Size}}&quot; | grep $(DOCKER_IMAGE_NAME) | cut -d\   -f2)
+
+build:          ## Build the docker image
+  docker build -t $(DOCKER_IMAGE_NAME) .
+  @echo ''
+  @echo &quot;Size of the image: ${DOCKER_IMAGE_SIZE}&quot;
+  @echo ''
+.PHONY: build
+
+</code></pre>
+
+<h2 id="result">Result</h2>
+
+<p>Running <code>make build</code> now gives me:</p>
+
+<p><img src="docker-image-size.png" alt="Showing the image size after building the Docker image" /></p>
+
+<p>OK, very good, I immediately got the feedback that this image is really big, so I do not forget to focus immediately on some improvements.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>A nice and tiny helper to be added to the toolbox.</p>
+
+    </div>
 
     <footer>
-        <ul class="actions">
-            <li><a href="https://stefanwalther.io/blog/docker-image-size/" class="button big">Continue Reading</a></li>
-        </ul>
         
 <ul class="stats">
     
@@ -251,158 +340,40 @@ DOCKER_IMAGE_NAME = &lt;your-docker-image-name&gt; DOCKER_IMAGE_SIZE = $(shell d
 
     </footer>
 </article>
-
-        
-            <article class="post">
-    <header>
-    <div class="title">
-        
-            <h2><a href="https://stefanwalther.io/blog/github-bad-guy/">GitHub - the Next Bad Guy?</a></h2>
-        
-        
-            <p>Is GitHub the next bad guy in the IT-industry?</p>
-        
-    </div>
-    <div class="meta">
-        
-            
-        
-
-        <time class="published"
-            datetime='2017-06-06'>
-            June 6, 2017</time>
-        <span class="author">Stefan Walther</span>
-        
-        
-    </div>
-</header>
-
-    
-    
-
-    
-        
-        
-
-
-
-
-  
-
-
-        
-
-        
-        
-        
-
-        <a href="https://stefanwalther.io/blog/github-bad-guy/" class="image featured">
-            <img src="/blog/github-bad-guy//header.png" alt="" />
-        </a>
-    
-
-
-    <p>It&rsquo;s not that long ago, that Microsoft was the bad guy for everything happening in the IT-industry. It was just cool to bash MS in favor of any Linux/Open-Source solution.
-Now we have 2017, the situation has changed dramatically:
- Microsoft is starting to become cool, being the Nr. 1 contributor in the Open Source world Microsoft and Google have swapped places: &ldquo;Microsoft is The New Google, Google is the Old Microsoft&ldquo; GitHub has become one of the major dependencies for every IT-company  I claim that GitHub has a huge potential to become the new bad guy in the industry:</p>
-
-    <footer>
-        <ul class="actions">
-            <li><a href="https://stefanwalther.io/blog/github-bad-guy/" class="button big">Continue Reading</a></li>
-        </ul>
-        
-<ul class="stats">
-    
-
-    
-    
-</ul>
-
-
-    </footer>
-</article>
-
-        
-            <article class="post">
-    <header>
-    <div class="title">
-        
-            <h2><a href="https://stefanwalther.io/blog/yet-another-blog/">Yet another blog. Why?</a></h2>
-        
-        
-    </div>
-    <div class="meta">
-        
-            
-        
-
-        <time class="published"
-            datetime='2017-04-27'>
-            April 27, 2017</time>
-        <span class="author">Stefan Walther</span>
-        
-        
-    </div>
-</header>
-
-    
-    
-
-    
-        
-        
-
-
-
-
-  
-
-
-        
-
-        
-        
-        
-
-        <a href="https://stefanwalther.io/blog/yet-another-blog/" class="image featured">
-            <img src="/blog/yet-another-blog//header.png" alt="" />
-        </a>
-    
-
-
-    <p>I like to blog. I like to share.
-In the recent years I have primarily created content on qlikblog.at, then I shared quite some solutions &amp; prototypes on GitHub and recently I have started a new blog called qliksite.io
-So why creating another blog?
-While all the efforts in the past primarily focused on projects, prototypes to spread the word in the Qlik ecosystem (QlikView, Qlik Sense &amp; Qlik Analytics Plaform), there is just more I want to write about:</p>
-
-    <footer>
-        <ul class="actions">
-            <li><a href="https://stefanwalther.io/blog/yet-another-blog/" class="button big">Continue Reading</a></li>
-        </ul>
-        
-<ul class="stats">
-    
-
-    
-    
-</ul>
-
-
-    </footer>
-</article>
-
-        
-
-        
 <ul class="actions pagination">
     
-        <li><a href="#" class="disabled button big previous">Previous Page</a></li>
+        <li><a href="https://stefanwalther.io/blog/github-bad-guy/"
+                class="button big previous">GitHub - the Next Bad Guy?</a></li>
     
 
     
-        <li><a href="#" class="disabled button big next">Next Page</a></li>
-    
 </ul>
+
+
+
+    
+        <article class="post">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stefanwalther-io';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        </article>
+    
+
 
     </div>
     
@@ -561,9 +532,6 @@ While all the efforts in the past primarily focused on projects, prototypes to s
     
         <section id="footer">
             <ul class="icons">
-                
-                    <li><a href="https://stefanwalther.io/blog/index.xml" type="application/rss+xml"
-                        target="_blank" title="RSS" class="fa fa-rss"></a></li>
                 
                 
                     

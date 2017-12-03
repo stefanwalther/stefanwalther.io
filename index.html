@@ -4,7 +4,7 @@
     <head>
         <meta http-equiv="pragma" content="no-cache" />
         <meta http-equiv="expires" content="0" />
-        <meta http-equiv="last-modified" content="2017-12-02@23:42:02 CET" />
+        <meta http-equiv="last-modified" content="2017-12-03@03:00:29 CET" />
         
             
                 <title>stefanwalther.io</title>
@@ -33,7 +33,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-06-06T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2017-12-03T00:00:00&#43;00:00"/>
 
 
 
@@ -153,6 +153,10 @@ ga('send', 'pageview');
 
                 
                     <li>
+                        <a href="https://stefanwalther.io/blog/docker-image-size/"><p>Building Docker Images - Check the Size</p></a>
+                    </li>
+                
+                    <li>
                         <a href="https://stefanwalther.io/blog/github-bad-guy/"><p>GitHub - the Next Bad Guy?</p></a>
                     </li>
                 
@@ -174,10 +178,10 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h2><a href="https://stefanwalther.io/blog/github-bad-guy/">GitHub - the Next Bad Guy?</a></h2>
+            <h2><a href="https://stefanwalther.io/blog/docker-image-size/">Building Docker Images - Check the Size</a></h2>
         
         
-            <p>Is GitHub the next bad guy in the IT-industry?</p>
+            <p>Getting the size of docker images after building it ...</p>
         
     </div>
     <div class="meta">
@@ -186,8 +190,8 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2017-06-06'>
-            June 6, 2017</time>
+            datetime='2017-12-03'>
+            December 3, 2017</time>
         <span class="author">Stefan Walther</span>
         
         
@@ -216,69 +220,43 @@ ga('send', 'pageview');
         
         
 
-        <a href="https://stefanwalther.io/blog/github-bad-guy/" class="image featured">
-            <img src="/blog/github-bad-guy//header.png" alt="" />
+        <a href="https://stefanwalther.io/blog/docker-image-size/" class="image featured">
+            <img src="/blog/docker-image-size//header.png" alt="" />
         </a>
     
 
 
     <div id="content">
-        <p>It&rsquo;s not that long ago, that Microsoft was the bad guy for everything happening in the IT-industry. It was just cool to bash MS in favor of any Linux/Open-Source solution.</p>
+        
 
-<p>Now we have 2017, the situation has changed dramatically:</p>
+<p>When building Docker Images one can easily forget to optimize the size of the images.
+Therefore I prefer to always get the immediate feedback, how large the resulting docker images is.</p>
 
-<ul>
-<li>Microsoft is starting to become cool, being the <a href="http://www.businessinsider.de/microsoft-github-open-source-2016-9">Nr. 1 contributor in the Open Source world</a></li>
-<li>Microsoft and Google have swapped places: &ldquo;<a href="https://www.forbes.com/sites/gordonkelly/2015/02/18/microsoft-google-swap/#767ef7223eb2">Microsoft is The New Google, Google is the Old Microsoft</a>&ldquo;</li>
-<li>GitHub has become one of the major dependencies for every IT-company</li>
-</ul>
+<p>Here&rsquo;s a small, reusable script, I use in some of my projects, a reusable section in a Makefile.</p>
 
-<p>I claim that <strong>GitHub has a huge potential to become the new bad guy in the industry</strong>:</p>
+<pre><code>DOCKER_IMAGE_NAME = &lt;your-docker-image-name&gt;
+DOCKER_IMAGE_SIZE = $(shell docker images --format &quot;{{.Repository}} {{.Size}}&quot; | grep $(DOCKER_IMAGE_NAME) | cut -d\   -f2)
 
-<ul>
-<li>Recently it was announced that <a href="https://github.com/blog/2345-celebrating-nine-years-of-github-with-an-anniversary-sale">GitHub has merged 100 million pull requests</a>.</li>
-<li>Microsoft, Google, Amazon have moved their most important Open Source repos to GitHub.</li>
-<li>Microsoft has <a href="https://blogs.msdn.microsoft.com/bharry/2017/03/31/shutting-down-codeplex/">announced to shut down CodePlex</a> in favor of GitHub.</li>
-</ul>
+build:          ## Build the docker image
+  docker build -t $(DOCKER_IMAGE_NAME) .
+  @echo ''
+  @echo &quot;Size of the image: ${DOCKER_IMAGE_SIZE}&quot;
+  @echo ''
+.PHONY: build
 
-<p>Can you remember?</p>
+</code></pre>
 
-<ul>
-<li>Not that many years ago, <a href="https://sourceforge.net/">SourceForge</a> was the Nr. 1 Open Source platform.</li>
-</ul>
+<h2 id="result">Result</h2>
 
-<p>Sure, there are other (minor) players</p>
+<p>Running <code>make build</code> now gives me:</p>
 
-<ul>
-<li><a href="https://bitbucket.org">BitBucket</a></li>
-<li><a href="https://gitlab.org">GitLab</a></li>
-</ul>
+<p><img src="docker-image-size.png" alt="Showing the image size after building the Docker image" /></p>
 
-<p>I cannot find any numbers, but I guess they are just negligible in terms of number of valuable and important repositories.</p>
+<p>OK, very good, I immediately got the feedback that this image is really big, so I do not forget to focus immediately on some improvements.</p>
 
-<p>So what happens if GitHub is down for a few days, maybe even a week or two?</p>
+<h2 id="summary">Summary</h2>
 
-<ul>
-<li>Software companies cannot deliver anymore?</li>
-<li>CI/CD processes are broken, no deliveries to cloud services anymore &hellip;</li>
-</ul>
-
-<p>Do you think this is an unrealistic scenario?</p>
-
-<ul>
-<li>Wake up, <a href="https://twitter.com/Ozzmos/status/869895400404201473/photo/1">GitHub can be down</a></li>
-</ul>
-
-<p><strong>Who is the next big player with the potential to actually break the dependency from GitHub?</strong></p>
-
-<hr />
-
-<p>Just to make it crystal-clear:</p>
-
-<ul>
-<li>I love GitHub and spend a significant amount of time on GitHub!</li>
-<li>But I am actually scared about how dependent we start to be on a working GitHub environment &amp; service.</li>
-</ul>
+<p>A nice and tiny helper to be added to the toolbox.</p>
 
     </div>
 
@@ -296,8 +274,8 @@ ga('send', 'pageview');
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://stefanwalther.io/blog/yet-another-blog/"
-                class="button big previous">Yet another blog. Why?</a></li>
+        <li><a href="https://stefanwalther.io/blog/github-bad-guy/"
+                class="button big previous">GitHub - the Next Bad Guy?</a></li>
     
 
     
@@ -339,43 +317,43 @@ ga('send', 'pageview');
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fstefanwalther.io%2fblog%2fgithub-bad-guy%2f&text=GitHub%20-%20the%20Next%20Bad%20Guy%3f&via=waltherstefan" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fstefanwalther.io%2fblog%2fdocker-image-size%2f&text=Building%20Docker%20Images%20-%20Check%20the%20Size&via=waltherstefan" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//plus.google.com/share?url=https%3a%2f%2fstefanwalther.io%2fblog%2fgithub-bad-guy%2f" target="_blank" class="share-btn google-plus">
+<li><a href="//plus.google.com/share?url=https%3a%2f%2fstefanwalther.io%2fblog%2fdocker-image-size%2f" target="_blank" class="share-btn google-plus">
     <i class="fa fa-google-plus"></i>
     <p>Google+</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fstefanwalther.io%2fblog%2fgithub-bad-guy%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fstefanwalther.io%2fblog%2fdocker-image-size%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//reddit.com/submit?url=https%3a%2f%2fstefanwalther.io%2fblog%2fgithub-bad-guy%2f&title=GitHub%20-%20the%20Next%20Bad%20Guy%3f" target="_blank" class="share-btn reddit">
+<li><a href="//reddit.com/submit?url=https%3a%2f%2fstefanwalther.io%2fblog%2fdocker-image-size%2f&title=Building%20Docker%20Images%20-%20Check%20the%20Size" target="_blank" class="share-btn reddit">
     <i class="fa fa-reddit-alien"></i>
     <p>Reddit</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fstefanwalther.io%2fblog%2fgithub-bad-guy%2f&title=GitHub%20-%20the%20Next%20Bad%20Guy%3f" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fstefanwalther.io%2fblog%2fdocker-image-size%2f&title=Building%20Docker%20Images%20-%20Check%20the%20Size" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fstefanwalther.io%2fblog%2fgithub-bad-guy%2f&title=GitHub%20-%20the%20Next%20Bad%20Guy%3f" target="_blank" class="share-btn stumbleupon">
+<li><a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fstefanwalther.io%2fblog%2fdocker-image-size%2f&title=Building%20Docker%20Images%20-%20Check%20the%20Size" target="_blank" class="share-btn stumbleupon">
     <i class="fa fa-stumbleupon"></i>
     <p>StumbleUpon</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Stefan%20Walther&body=https%3a%2f%2fstefanwalther.io%2fblog%2fgithub-bad-guy%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Stefan%20Walther&body=https%3a%2f%2fstefanwalther.io%2fblog%2fdocker-image-size%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -423,6 +401,20 @@ ga('send', 'pageview');
                     
                 
 
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://stefanwalther.io/blog/docker-image-size/">Building Docker Images - Check the Size</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-12-03'>
+                                    December 3, 2017</time>
+                            </header>
+                        </article>
+                    </li>
                 
                     <li>
                         <article>

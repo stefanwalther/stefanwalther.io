@@ -6,10 +6,21 @@
     <description>Recent content on stefanwalther.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://stefanwalther.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building Docker Images - Check the Size</title>
+      <link>https://stefanwalther.io/blog/docker-image-size/</link>
+      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://stefanwalther.io/blog/docker-image-size/</guid>
+      <description>When building Docker Images one can easily forget to optimize the size of the images. Therefore I prefer to always get the immediate feedback, how large the resulting docker images is.
+Here&amp;rsquo;s a small, reusable script, I use in some of my projects, a reusable section in a Makefile.
+DOCKER_IMAGE_NAME = &amp;lt;your-docker-image-name&amp;gt; DOCKER_IMAGE_SIZE = $(shell docker images --format &amp;quot;{{.Repository}} {{.Size}}&amp;quot; | grep $(DOCKER_IMAGE_NAME) | cut -d\ -f2) build: ## Build the docker image docker build -t $(DOCKER_IMAGE_NAME) .</description>
+    </item>
     
     <item>
       <title>GitHub - the Next Bad Guy?</title>
