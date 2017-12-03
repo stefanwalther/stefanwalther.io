@@ -9,7 +9,7 @@ featuredalt = ""
 author = "Stefan Walther"
 type = "post"
 slug = ""
-image = "header.png"
+images = ["header.png"]
 +++
 
 When building Docker Images one can easily forget to optimize the size of the images.
