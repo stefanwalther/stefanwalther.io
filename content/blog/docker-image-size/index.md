@@ -9,7 +9,6 @@ featuredalt = ""
 author = "Stefan Walther"
 type = "post"
 slug = ""
-images = ["https://stefanwalther.io/blog/docker-image-size/header.png"]
 thumbnail = "header.png"
 +++
 
