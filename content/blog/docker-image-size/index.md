@@ -34,7 +34,7 @@ build:          ## Build the docker image
 
 Running `make build` now gives me:
 
-![Showing the image size after building the Docker image](/blo/docker-image-size/docker-image-size.png)
+![Showing the image size after building the Docker image](/blog/docker-image-size/docker-image-size.png)
 
 OK, very good, I immediately got the feedback that this image is really big, so I do not forget to focus immediately on some improvements.
 
