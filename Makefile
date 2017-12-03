@@ -5,13 +5,13 @@ help:								## Show this help.
 	@echo ''
 .PHONY: help
 
-docs-gen:						## Generate the static pages (using hugo).
+gen:						## Generate the static pages (using hugo).
 	hugo
-.PHONY: docs-gen
+.PHONY: gen
 
-docs-serve:					## Serve the docs
+serve:					## Serve the docs
 	hugo server -D
-.PHONY: docs-serve
+.PHONY: serve
 
 publish:				## Publish the docs to GitHub
 	hugo
