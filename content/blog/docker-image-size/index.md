@@ -25,7 +25,6 @@ build:          ## Build the docker image
   docker build -t $(DOCKER_IMAGE_NAME) .
   @echo ''
   @echo "Size of the image: ${DOCKER_IMAGE_SIZE}"
-  @echo ''
 .PHONY: build
 
 ```
