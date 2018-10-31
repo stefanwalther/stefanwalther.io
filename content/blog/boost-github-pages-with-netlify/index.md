@@ -24,3 +24,11 @@ I have moved a few GitHub Pages to Netlify within a few hours and the results ar
 Let's assume you have a project on GithHub with some attached documentation (Hugo, Metalsmith, Jekyll, etc.):
 
 
+## Conclusion
+
+A few insights after moving to this solution:
+
+- Caching of Github Pages is not an issue anymore:
+  It happened so often to me that I was pushing something to GitHub Pages, but it took a while until I could see the changes, to caching on Github Pages is pretty aggressive.
+- SSL for free
+  I finally get SSL for free for all my pages, really neat.
