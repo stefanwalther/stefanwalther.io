@@ -1,6 +1,6 @@
 Content for stefanwalther.io.
 
-## Deploy
+## Usage
 
 ```sh
 $ sh deploy.sh
